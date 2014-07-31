@@ -40,3 +40,9 @@
 .comment-refuted{
   opacity: 0.3;
 }
+
+#comment-input {
+	float:left;
+	width: 580px;
+	height: 33px;
+}

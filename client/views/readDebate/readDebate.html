@@ -49,14 +49,17 @@
         {{/unless}}
       {{/if}}
     </div>
-    <div class="comment-wrap">
-      {{#if editing}}
-        {{>editingComment}}
-      {{/if}}
-    </div>
+
   {{/if}}
   <div>
 		<ul>
+{{#if editing}}
+      <li class="comment">
+          
+            {{>editingComment}}
+          
+      </li>
+{{/if}}
     	{{#each commentHelper _id}}
 				<li class="comment">{{>comment}}</li>
     	{{/each}}
